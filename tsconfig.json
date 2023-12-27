@@ -1,6 +1,16 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "baseUrl": "../",
+    "paths": {
+      "src/*": [
+        "reactnative-app/src/*"
+      ],
+      "@better-dev": [
+        "./"
+      ],
+    },
+  },
+  "include": ["src", "src/**/*.ts", "src/**/*.tsx"],
 }
